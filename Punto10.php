@@ -1,5 +1,5 @@
 <?php
-// Función para convertir un número romano a decimal
+
 function romanoADecimal($romano) {
     $valores = [
         'I' => 1, 'V' => 5, 'X' => 10, 'L' => 50,
@@ -21,7 +21,6 @@ function romanoADecimal($romano) {
     return $resultado;
 }
 
-// Verificar si se envió un número romano desde el formulario
 $decimal = "";
 if (isset($_GET['romano'])) {
     $romano = strtoupper($_GET['romano']);
