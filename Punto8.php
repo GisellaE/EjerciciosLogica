@@ -1,5 +1,5 @@
 <?php
-// Definir una lista de frases
+
 $frases = [
     "El sol brilla en el cielo azul",
     "El cielo es azul y el mar también",
@@ -7,14 +7,10 @@ $frases = [
     "El azul del mar es hermoso"
 ];
 
-// Unir todas las frases en una sola cadena
 $textoCompleto = strtolower(implode(" ", $frases));
-
-// Separar las palabras y contar su frecuencia
 $palabras = str_word_count($textoCompleto, 1);
 $frecuencia = array_count_values($palabras);
 
-// Encontrar la palabra más repetida
 $palabraMasRepetida = array_search(max($frecuencia), $frecuencia);
 $maxFrecuencia = max($frecuencia);
 
