@@ -1,5 +1,5 @@
 <?php
-// Verificar si se envió una palabra desde el formulario
+
 $esPalindromo = false;
 $mensaje = "";
 if (isset($_GET['palabra'])) {
