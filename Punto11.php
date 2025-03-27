@@ -1,5 +1,4 @@
 <?php
-// Implementación del algoritmo de ordenamiento QuickSort
 function quickSort($array) {
     if (count($array) < 2) {
         return $array;
@@ -12,7 +11,6 @@ function quickSort($array) {
     return array_merge(quickSort($menores), [$pivote], quickSort($mayores));
 }
 
-// Definir un arreglo desordenado
 $numeros = [34, 7, 23, 32, 5, 62, 32, 2, 78, 12];
 $ordenado = quickSort($numeros);
 ?>
