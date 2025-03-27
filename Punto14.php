@@ -1,5 +1,5 @@
 <?php
-// Función para verificar si un número es primo de manera optimizada
+
 function esPrimo($n) {
     if ($n < 2) return false;
     if ($n == 2 || $n == 3) return true;
