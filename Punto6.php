@@ -1,8 +1,7 @@
 <?php
-// Definir un arreglo de números con duplicados
+
 $numeros = [10, 20, 20, 30, 40, 40, 50, 10, 60, 30];
 
-// Eliminar duplicados usando array_unique
 $numerosUnicos = array_values(array_unique($numeros));
 
 ?>
