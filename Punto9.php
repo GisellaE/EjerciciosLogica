@@ -1,5 +1,4 @@
 <?php
-// Definir una lista de frases
 $frases = [
     "El sol brilla en el cielo azul",
     "El cielo es azul y el mar también",
@@ -7,13 +6,12 @@ $frases = [
     "El azul del mar es hermoso"
 ];
 
-// Verificar si se enviaron las palabras desde el formulario
 $fraseModificada = "";
 if (isset($_GET['palabra_original']) && isset($_GET['palabra_nueva'])) {
     $palabraOriginal = $_GET['palabra_original'];
     $palabraNueva = $_GET['palabra_nueva'];
     
-    // Reemplazar la palabra en todas las frases
+
     $fraseModificada = array_map(function($frase) use ($palabraOriginal, $palabraNueva) {
         return str_ireplace($palabraOriginal, $palabraNueva, $frase);
     }, $frases);
