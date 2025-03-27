@@ -1,5 +1,5 @@
 <?php
-// Implementación de búsqueda binaria en una matriz 2D ordenada
+
 function busquedaBinariaMatriz($matriz, $objetivo) {
     $filas = count($matriz);
     $columnas = count($matriz[0]);
@@ -24,7 +24,6 @@ function busquedaBinariaMatriz($matriz, $objetivo) {
     return "No encontrado";
 }
 
-// Definir una matriz 2D ordenada
 $matriz = [
     [1, 3, 5, 7],
     [10, 11, 16, 20],
