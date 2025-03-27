@@ -1,5 +1,5 @@
 <?php
-// Verificar si se envió una palabra desde el formulario
+
 $palabraInvertida = "";
 if (isset($_GET['palabra'])) {
     $palabra = $_GET['palabra'];
