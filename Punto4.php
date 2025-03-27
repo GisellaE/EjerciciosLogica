@@ -1,5 +1,4 @@
 <?php
-// Verificar si se envió una frase desde el formulario
 $vocalesContadas = 0;
 if (isset($_GET['frase'])) {
     $frase = $_GET['frase'];
