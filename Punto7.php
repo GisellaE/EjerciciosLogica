@@ -1,9 +1,9 @@
 <?php
-// Definir dos arreglos de números
+
 $numeros1 = [10, 20, 30, 40, 50];
 $numeros2 = [30, 40, 50, 60, 70];
 
-// Encontrar la intersección de los arreglos
+
 $interseccion = array_values(array_intersect($numeros1, $numeros2));
 
 ?>
