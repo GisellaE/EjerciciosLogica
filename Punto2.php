@@ -1,12 +1,12 @@
 <?php
-// Definir un arreglo de números
+
 $numeros = [10, 20, 30, 40, 50];
 
-// Obtener el número desde un formulario
-if (isset($_GET['numero'])) {
-    $numeroBuscar = intval($_GET['numero']); // Convertir a número entero
 
-    // Verificar si el número está en el arreglo
+if (isset($_GET['numero'])) {
+    $numeroBuscar = intval($_GET['numero']); 
+
+   
     if (in_array($numeroBuscar, $numeros)) {
         echo "El número $numeroBuscar está en el arreglo.";
     } else {
