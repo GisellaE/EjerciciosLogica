@@ -1,5 +1,4 @@
 <?php
-// Implementación de la serie de Fibonacci con programación dinámica
 function fibonacci($n) {
     if ($n <= 0) return 0;
     if ($n == 1) return 1;
