@@ -1,5 +1,4 @@
 <?php
-// Función para calcular el Máximo Común Divisor (MCD) usando el algoritmo de Euclides
 function calcularMCD($a, $b) {
     while ($b != 0) {
         $temp = $b;
@@ -8,8 +7,6 @@ function calcularMCD($a, $b) {
     }
     return $a;
 }
-
-// Función para calcular el Mínimo Común Múltiplo (MCM)
 function calcularMCM($a, $b) {
     return ($a * $b) / calcularMCD($a, $b);
 }
